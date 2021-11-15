@@ -13,8 +13,12 @@ Collection of scripts to find publicly exposed GCP resources.
 
 ### Connect to the control plane
 
-`$ gcloud auth login`
+```shell
+gcloud auth login
+```
 
 ### Find open GCP resources
 
-`$ bash Find-OpenBuckets.sh`
+```shell
+bash Find-OpenBuckets.sh
+```
