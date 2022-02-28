@@ -1,6 +1,6 @@
 #### Description #################################################################################
 #
-# Indexes all the Cloud Storage Buckets in a GCP environement and verifies whether they are accessible to "allUsers" or "allAuthenticatedUsers".
+# Indexes all the Cloud Storage Buckets in a GCP environment and verifies whether they are accessible to "allUsers" or "allAuthenticatedUsers".
 # Note: Buckets that are publicly exposed are easy to identify through the console for a single project.
 # 
 ####
