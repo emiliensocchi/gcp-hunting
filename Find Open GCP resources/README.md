@@ -6,7 +6,7 @@ Collection of scripts to find publicly exposed GCP resources.
 ## Prerequisite
 
 - gcloud ([instructions](https://cloud.google.com/sdk/docs/install#deb))
-- A user account with read access to all the projects in the environment
+- A user account with read access to all projects in the environment
 
 
 ## Usage
