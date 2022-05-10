@@ -11,8 +11,9 @@ projects_with_ssh_keys_in_compute_instance_metadata=()
 total_number_of_projects=$(gcloud projects list --format="get(projectId)" | wc -l)
 
 
-for project in $(gcloud projects list --format="get(projectId)"); do
-      echo "[*] scraping project '$project'"
+for project in $(gcloud projects list --format="get(projectId)")
+do
+      echo "[*] scraping project: $project"
 
       ssh_keys_n=$(gcloud compute project-info describe --project "$project" --format="json" 2>/dev/null | jq -r '.commonInstanceMetadata | .items[]? | .value' | sed "s/\n/\n\r/" | grep -Ev "(k8s|gke)" | wc -l)
       

@@ -9,8 +9,9 @@
 projects_with_default_service_accounts=()
 total_number_of_projects=$(gcloud projects list --format="get(projectId)" | wc -l)
 
-for project in $(gcloud projects list --format="get(projectId)"); do
-      echo "[*] scraping project '$project'"
+for project in $(gcloud projects list --format="get(projectId)")
+do
+      echo "[*] scraping project: $project"
 
       service_accounts_n=$(gcloud iam service-accounts list --project "$project" --filter="disabled: False AND displayName ~ default" --format="value(displayName)" | wc -l)
 
