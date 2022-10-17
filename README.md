@@ -1,3 +1,3 @@
 # GCP hunting
 
-Collection of GCP hunting resources.
+Collection of hunting resources for Google Cloud Platform (GCP).
