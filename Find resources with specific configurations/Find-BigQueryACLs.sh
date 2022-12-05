@@ -1,6 +1,6 @@
 #### Description #################################################################################
 #
-# Indexes all BigQuery instances in an environement and prints out their Data Set and Table/View ACL,
+# Indexes all BigQuery instances in an environment and prints out their Data Set and Table/View ACL,
 # to check whether further restrictions than the ones applied at a Project level are defined.
 #
 # Note: under testing - not sure if useful

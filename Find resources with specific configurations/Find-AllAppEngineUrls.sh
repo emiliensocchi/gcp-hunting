@@ -1,6 +1,6 @@
 #### Description #################################################################################
 #
-# Indexes all URLs used by App Engine instances in a GCP environement.
+# Indexes all URLs used by App Engine instances in a GCP environment.
 #
 ####
 

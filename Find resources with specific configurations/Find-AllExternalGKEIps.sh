@@ -1,6 +1,6 @@
 #### Description #################################################################################
 #
-# Indexes all external IP addresses belonging to GKE instances in a GCP environement. 
+# Indexes all external IP addresses belonging to GKE instances in a GCP environment. 
 #
 ####
 

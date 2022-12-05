@@ -1,6 +1,6 @@
 #### Description #################################################################################
 #
-# Indexes all Google Kubernetes Engine (GKE) clusters in an environement and retrieves the IP 
+# Indexes all Google Kubernetes Engine (GKE) clusters in an environment and retrieves the IP 
 # address of their control planes.
 #
 ####
@@ -24,5 +24,5 @@ do
 done
 
 echo "-----"
-echo "GKE clusters in the environement are publicly exposed on the following IP addresses:"
+echo "GKE clusters in the environment are publicly exposed on the following IP addresses:"
 printf '%s\n' "${all_gke_control_plane_ips[@]}" | sort
