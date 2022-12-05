@@ -1,6 +1,6 @@
 #### Description #################################################################################
 #
-# Indexes all external IP addresses used by Compute Engine instances in a GCP environement.
+# Indexes all external IP addresses used by Compute Engine instances in a GCP environment.
 #
 ####
 
