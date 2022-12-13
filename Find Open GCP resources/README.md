@@ -20,5 +20,5 @@ gcloud auth login
 ### Find open GCP resources
 
 ```shell
-bash Find-OpenBuckets.sh
+bash <script-name.sh>
 ```

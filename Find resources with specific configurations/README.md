@@ -20,5 +20,5 @@ gcloud auth login
 ### Find open GCP resources
 
 ```shell
-bash Find-ServiceAccountsKeys.sh
+bash <script-name.sh>
 ```
