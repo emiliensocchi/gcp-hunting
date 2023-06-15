@@ -1,7 +1,6 @@
 #### Description #################################################################################
 #
-# Indexes all projects in a GCP environement and indexes those that contain a VPC, where at least
-# one internal IP address has been assigned to a host.
+# Indexes all projects in a GCP environement and verifies whether they contain at least one VPC.
 #
 ####
 
@@ -17,9 +16,9 @@ do
 
       if [[ "$enabled" ]]
       then
-            private_ips=$(gcloud compute instances list --project "$project" --format json | jq -r '.[] | .networkInterfaces[]  | .networkIP')
+            vpcs=$(gcloud compute networks list --project "$project")
 
-            if [[ "$private_ips" ]]
+            if [[ "$vpcs" ]]
             then
                   projects_with_active_vpc+=("$project")
                   echo "[!] At least one active VPC"
